@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #dadada;
+}
+
+.contenedor{
+    border: 1px solid black;
+    width: 90%;
+    max-width: 1200px;
+    background: lightblue;
+    margin: 2px auto;
+    padding: 2px;
+    color: white;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header
+{
+    border: 1px solid black;
+    background: grey;
+    margin: 2px;
+    padding: 2px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header h2{
+    width: 70%;
+    margin: 1px;
+    padding: 1px;
+
+    flex-grow: 1;
+    text-align: center;
+}
+
+header img{
+    margin: 1px;
+    padding: 1px;
+    width: 100px;
+    height: 75px;
+}
+nav{
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    background: gray;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav a {
+    border: 1px solid white;
+    margin: 1px;
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    flex-grow:  1;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: white;
+    color: blue;
+}
+
+section{
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    background: grey;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section article{
+    border: 1px solid white;
+    margin: 1px;
+    padding: 1px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+section article h2{
+    text-align: center;
+    border-bottom: 3px dashed white;
+
+}
+
+
+section article p
+{
+    margin: 5px;
+
+}
+
+section article img
+{
+    border: 1px solid white;
+    margin: 2px;
+    padding: 2px;
+}
+section article img
+{
+    width: 200px;
+    height: 100px;
+}
+
+aside
+{
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    background: gray;
+
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+}
+
+
+aside .grupo1{
+    border: 1px solid white;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside .grupo2{
+    border: 1px solid white;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside h2{
+        border: 1px solid white;
+        margin: 1px;
+        padding: 1px;
+ }
+
+ aside img
+ {
+     margin: 1px;
+     padding: 1px;
+     border: 1px solid white;
+
+ }
+
+ footer
+ {
+        border: 1px solid black;
+        margin: 2px;
+        padding: 2px;
+        background: gray;
+        display: flex;
+        flex-flow: row wrap;
+ }
+
+ @media screen and (max-width: 800px) {
+     
+    aside{
+        flex-flow: column nowrap;
+    }
+
+    aside h2{
+    text-align: center;
+    }
+
+ }
+
+ @media screen and (max-width: 600px) {
+    
+    header{
+        flex-flow: column wrap;
+    }
+
+    nav{
+        flex-flow: column wrap;
+    }
+
+    aside{
+        flex-flow: column wrap;
+    }
+
+    aside h2{
+    text-align: center;
+    }
+
+    footer{
+        flex-flow: column wrap;
+    }
+
+ }
